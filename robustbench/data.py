@@ -9,8 +9,8 @@ import torchvision.datasets as datasets
 import torchvision.transforms as transforms
 from torch.utils.data import Dataset
 
-from robustbench.model_zoo.enums import BenchmarkDataset
-from robustbench.zenodo_download import DownloadError, zenodo_download
+from .model_zoo.enums import BenchmarkDataset
+from .zenodo_download import DownloadError, zenodo_download
 
 
 def _load_dataset(

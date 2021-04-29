@@ -2,12 +2,12 @@ from collections import OrderedDict
 
 import torch
 
-from robustbench.model_zoo.architectures.dm_wide_resnet import CIFAR100_MEAN, CIFAR100_STD, \
+from .architectures.dm_wide_resnet import CIFAR100_MEAN, CIFAR100_STD, \
     DMWideResNet, Swish
-from robustbench.model_zoo.architectures.resnet import PreActBlock, PreActResNet
-from robustbench.model_zoo.architectures.resnext import CifarResNeXt, ResNeXtBottleneck
-from robustbench.model_zoo.architectures.wide_resnet import WideResNet
-from robustbench.model_zoo.enums import ThreatModel
+from .architectures.resnet import PreActBlock, PreActResNet
+from .architectures.resnext import CifarResNeXt, ResNeXtBottleneck
+from .architectures.wide_resnet import WideResNet
+from .enums import ThreatModel
 
 
 class Chen2020EfficientNet(WideResNet):

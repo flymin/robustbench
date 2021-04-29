@@ -4,15 +4,15 @@ import torch
 import torch.nn.functional as F
 from torch import nn
 
-from robustbench.model_zoo.architectures.dm_wide_resnet import CIFAR10_MEAN, CIFAR10_STD, \
+from .architectures.dm_wide_resnet import CIFAR10_MEAN, CIFAR10_STD, \
     DMWideResNet, Swish
-from robustbench.model_zoo.architectures.resnet import Bottleneck, BottleneckChen2020AdversarialNet, \
+from .architectures.resnet import Bottleneck, BottleneckChen2020AdversarialNet, \
     PreActBlock, \
     PreActBlockV2, PreActResNet, ResNet, ResNet18
-from robustbench.model_zoo.architectures.resnext import CifarResNeXt, \
+from .architectures.resnext import CifarResNeXt, \
     ResNeXtBottleneck
-from robustbench.model_zoo.architectures.wide_resnet import WideResNet
-from robustbench.model_zoo.enums import ThreatModel
+from .architectures.wide_resnet import WideResNet
+from .enums import ThreatModel
 
 
 class Hendrycks2020AugMixResNeXtNet(CifarResNeXt):

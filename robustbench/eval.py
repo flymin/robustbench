@@ -9,10 +9,10 @@ from autoattack import AutoAttack
 from torch import nn
 from tqdm import tqdm
 
-from robustbench.data import DATASET_CORRUPTIONS, load_clean_dataset, \
+from .data import DATASET_CORRUPTIONS, load_clean_dataset, \
     load_corruptions_dataset
-from robustbench.model_zoo.enums import BenchmarkDataset, ThreatModel
-from robustbench.utils import clean_accuracy, load_model, parse_args, update_json
+from .model_zoo.enums import BenchmarkDataset, ThreatModel
+from .utils import clean_accuracy, load_model, parse_args, update_json
 
 
 def benchmark(model: Union[nn.Module, Sequence[nn.Module]],
